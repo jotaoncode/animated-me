@@ -13,8 +13,8 @@
     "mocha": "~2.3.3",
     "chai": "~3.4.0",
     "react": "~0.14.0",
-    "syphon": "~0.3.0",
-    "sinon": "~1.17.2"
+    "sinon": "~1.17.2",
+    "doxx": "~2.1.1"
   },
   "dependencies": {
     "jquery": "^2.1.4",
@@ -23,12 +23,10 @@
     "material-design-icons": "^2.0.0",
     "materialize-css": "git://github.com/Dogfalo/materialize.git",
     "node-minify": "^1.2.0",
-    "path": "^0.11.14",
     "q": "^1.4.1",
     "timelinejs": "^2.35.6",
     "typed.js": "git://github.com/mattboldt/typed.js.git",
-    "velocity-animate": "^1.2.2",
-    "doxx": "~2.1.1"
+    "velocity-animate": "^1.2.2"
   },
   "scripts": {
     "generate-doc": "./node_modules/doxx/bin/doxx -s src/js -T docs"
