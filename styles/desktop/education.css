@@ -1,0 +1,154 @@
+@media (min-width: 1400px) {
+  .education-title {
+    opacity: 0;
+  }
+  .education-content > li{
+    opacity: 0;
+  }
+  .education .education-card {
+    height: 8em;
+    padding: 1%;
+  }
+  .education li {
+    margin-top: 1%;
+  }
+  .education .education-card .header h6{
+    font-size: 2em;
+  }
+  .education .education-card .header h6 span{
+    float:left;
+    margin-right: 1%;
+  }
+  .education .education-card .body p{
+    font-size: 1em;
+    margin: 0 0 0 75px;
+  }
+
+  #hat.hat.education-scene {
+    bottom: -300vh;
+    left:2vw;
+    width: 5vw;
+    opacity: 0;
+  }
+  #wand.education-scene {
+    opacity: 0;
+    position: absolute;
+    bottom: -295vh;
+    left:3vw;
+    width: 3vw;
+    z-index: 0;
+  }
+  .magicblast.education-scene {
+    opacity: 0;
+    position: absolute;
+  }
+
+  @-webkit-keyframes hatAliveEducation {
+    0%   {
+      -webkit-transform: translate(0, -80vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(10px, -80vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes showHatEducation {
+    0%   {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideHatEducation {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes dropWandEducation {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showWandEducation {
+    0%   {
+      -webkit-transform: translate(0, -80vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideWandEducation {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -80vh) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes sendMagicEducation {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -50vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes wandAliveEducation {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -51vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  .send-magic.education-scene {
+    -webkit-animation: sendMagicEducation 0.2s alternate 2 forwards;
+  }
+  .wand-appear.education-scene {
+    -webkit-animation: showWandEducation 0.9s forwards;
+  }
+  .wand-disappear.education-scene {
+    -webkit-animation: hideWandEducation 0.9s forwards;
+  }
+  .is-alive.wand.education-scene{
+    -webkit-animation: wandAliveEducation 0.5s alternate 4 forwards;
+  }
+
+  .is-alive.hat.education-scene{
+    -webkit-animation: hatAliveEducation 0.5s alternate infinite;
+  }
+  .presentate-hat.education-scene {
+    -webkit-animation: showHatEducation 1s forwards;
+  }
+  .hide-hat.education-scene {
+    -webkit-animation: hideHatEducation 1s forwards;
+  }
+  .drop-wand.education-scene {
+    -webkit-animation: dropWandEducation 0.2s alternate 2 forwards;
+  }
+
+}

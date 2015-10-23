@@ -1,0 +1,41 @@
+@media (max-width: 800px) {
+  .distance-content {
+    margin: 10vw 0 0 10vw;
+    width: 80vw;
+  }
+  .next-page>a>i{
+    opacity: 0.5;
+    font-size: 2em;
+    color: blue;
+    vertical-align: middle;
+  }
+  .back-page>a{
+    height: 100%;
+    font-size: 2em;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .angular {width:20px; height:21px; background-position: -551px -228px}
+  .backbone {width:20px; height:24px; background-position: -800px -223px}
+  .browserify {width:24px; height:20px; background-position: -914px -223px}
+  .css3 {width:25px; height:36px; background-position: -139px -211px}
+  .express {width:25px; height:25px; background-position: -451px -216px}
+  .grunt {width:20px; height:24px; background-position: -914px -197px}
+  .git {width:20px; height:20px; background-position: -595px -228px}
+  .gulp {width:20px; height:44px; background-position: -173px -134px}
+  .html5 {width:25px; height:25px; background-position: -773px -223px}
+  .jquery {width:58px; height:20px; background-position: -877px -68px}
+  .js {width:25px; height:25px; background-position: -914px -170px}
+  .less {width:49px; height:20px; background-position: -478px -227px}
+  .linkedin {width:20px; height:20px; background-position: -617px -228px}
+  .marionette {width:20px; height:27px; background-position: -717px -60px}
+  .mongo {width:57px; height:17px; background-position: -392px -216px}
+  .node {width:20px; height:22px; background-position: -529px -228px}
+  .sass {width:27px; height:20px; background-position: -166px -222px}
+  .space-traveller {width:28px; height:20px; background-position: -261px -110px}
+  .trends {width:20px; height:20px; background-position: -639px -228px}
+  .twitter {width:20px; height:20px; background-position: -661px -228px}
+}

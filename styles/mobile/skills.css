@@ -1,0 +1,141 @@
+@media (max-width: 800px) {
+  #skills .distance-content{
+    margin-bottom: 50px;
+  }
+  #skills .skills-content {
+    opacity: 0;
+  }
+  .skills-content .row .col.s6.m6.l3 {
+    min-height: 50px;
+  }
+  .skills-title {
+    opacity: 0;
+  }
+  #hat.hat.skills-scene {
+    bottom: -195vh;
+    position: absolute;
+    left:2vw;
+    width: 8vw;
+    opacity: 0;
+  }
+  #wand.skills-scene {
+    opacity: 0;
+    position: absolute;
+    bottom: -195vh;
+    left:3vw;
+    width: 6vw;
+    z-index: 0;
+  }
+  .magicblast.skills-scene {
+    opacity: 0;
+    position: absolute;
+  }
+
+  @-webkit-keyframes hatAliveSkills {
+    0%   {
+      -webkit-transform: translate(0, -70vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(10px, -70vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes showHatSkills {
+    0%   {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -70vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideHatSkills {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -70vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes dropWandSkills {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -70vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -70vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showWandSkills {
+    0%   {
+      -webkit-transform: translate(0, -70vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideWandSkills {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -70vh) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes sendMagicSkills {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes wandAliveSkills {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -41vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  .send-magic.skills-scene {
+    -webkit-animation: sendMagicSkills 0.2s alternate 2 forwards;
+  }
+  .wand-appear.skills-scene {
+    -webkit-animation: showWandSkills 0.9s forwards;
+  }
+  .wand-disappear.skills-scene {
+    -webkit-animation: hideWandSkills 0.9s forwards;
+  }
+  .is-alive.wand.skills-scene{
+    -webkit-animation: wandAliveSkills 0.5s alternate 4 forwards;
+  }
+
+  .is-alive.hat.skills-scene{
+    -webkit-animation: hatAliveSkills 0.5s alternate infinite;
+  }
+  .presentate-hat.skills-scene {
+    -webkit-animation: showHatSkills 1s forwards;
+  }
+  .hide-hat.skills-scene {
+    -webkit-animation: hideHatSkills 1s forwards;
+  }
+  .drop-wand.skills-scene {
+    -webkit-animation: dropWandSkills 0.2s alternate 2 forwards;
+  }
+}

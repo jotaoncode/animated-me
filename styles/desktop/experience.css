@@ -1,0 +1,143 @@
+@media (min-width: 1400px) {
+  #timeline {
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+  .experience-title {
+    opacity: 0;
+  }
+  #timeline > .timeline-content{
+    width: 100%;
+    height: 100%;
+  }
+  #timeline > h2 {
+    opacity: 0;
+  }
+  #hat.hat.experience-scene {
+    bottom: -100vh;
+    left:2vw;
+    width: 5vw;
+    opacity: 0;
+  }
+  #wand.experience-scene {
+    opacity: 0;
+    position: absolute;
+    bottom: -95vh;
+    left:3vw;
+    width: 3vw;
+    z-index: 0;
+  }
+  .magicblast.experience-scene {
+    opacity: 0;
+    position: absolute;
+  }
+
+  @-webkit-keyframes hatAliveExperience {
+    0%   {
+      -webkit-transform: translate(0, -80vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(10px, -80vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes showHatExperience {
+    0%   {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideHatExperience {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes dropWandExperience {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showWandExperience {
+    0%   {
+      -webkit-transform: translate(0, -75vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideWandExperience {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -75vh) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes sendMagicExperience {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes wandAliveExperience {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -41vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  .send-magic.experience-scene {
+    -webkit-animation: sendMagicExperience 0.2s alternate 2 forwards;
+  }
+  .wand-appear.experience-scene {
+    -webkit-animation: showWandExperience 0.9s forwards;
+  }
+  .wand-disappear.experience-scene {
+    -webkit-animation: hideWandExperience 0.9s forwards;
+  }
+  .is-alive.wand.experience-scene{
+    -webkit-animation: wandAliveExperience 0.5s alternate 4 forwards;
+  }
+
+  .is-alive.hat.experience-scene{
+    -webkit-animation: hatAliveExperience 0.5s alternate infinite;
+  }
+  .presentate-hat.experience-scene {
+    -webkit-animation: showHatExperience 1s forwards;
+  }
+  .hide-hat.experience-scene {
+    -webkit-animation: hideHatExperience 1s forwards;
+  }
+  .drop-wand.experience-scene {
+    -webkit-animation: dropWandExperience 0.2s alternate 2 forwards;
+  }
+}

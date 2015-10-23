@@ -1,0 +1,387 @@
+@media (max-width: 800px) {
+  /***** Animation Card ******/
+  .animation {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .stage {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .animation .stage .explotion-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .animation .stage .explotion-container div {
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%
+  }
+  /*****CONTACT*********/
+  #contact{
+    height: 100%;
+  }
+  #contact_card {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5% 0 0 20%;
+  }
+  #contact_card > div {
+    opacity: 0;
+    width: 70vw;
+    height: 60vh;
+  }
+  #contact_card .sized-profile-image .profile-name {
+    opacity: 0;
+    font-size: 1em;
+  }
+  #contact_card .sized-profile-image .portrait {
+    opacity: 0;
+  }
+
+  #profile-list {
+    margin: 0;
+    padding-bottom: 2px;
+  }
+  .profile {
+  }
+  .profile-icon-contact{
+    display: inline-block;
+  }
+
+  .profile-icon-contact a > span {
+    opacity: 0;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  .location-contact i, .location-contact span{
+    font-size: 0.6em;
+    opacity: 0;
+    vertical-align: middle;
+  }
+  .mail-contact i, .mail-contact span {
+    font-size: 0.6em;
+    opacity: 0;
+    vertical-align: middle;
+  }
+
+  .show-profile {
+    position: relative;
+    -webkit-animation: showProfileList 3s forwards;
+  }
+  .profile-list .activity {
+    text-align: right;
+    margin: 0;
+    font-size: 0.6em;
+    height: 0.6em;
+  }
+  h3.show-profile {
+    font-size: 2em;
+  }
+  .show-profile p{
+    font-size: 1.5em;
+  }
+  .profile-content {
+    margin-top: 2%;
+  }
+  .profile-content .profile-name{
+    padding-left: 6%;
+  }
+  .profile-content .profile-description li{
+    padding-left: 6%;
+  }
+  .profile-content .profile-description li.icons{
+    text-align: center;
+    padding-top: 2%;
+  }
+  .profile-content .profile-description li.activity{
+    text-align: right;
+    font-size: 0.6em;
+  }
+  .profile-description li i {
+    vertical-align: bottom;
+    padding-right: 2px;
+  }
+  .sized-profile-image {
+    opacity: 0;
+    width: 50vw;
+    top: -64px;
+  }
+  .sized-profile-image .protrait {
+    margin-top: 1vw;
+  }
+  .sized-profile-image .protrait > img {
+    width: 14vw;
+    opacity: 0;
+  }
+  #hat {
+    position: absolute;
+    z-index: 1;
+  }
+  #hat.hat.card-scene {
+    bottom: -5vh;
+    left:2vw;
+    width: 8vw;
+    opacity: 0;
+  }
+
+  .welcome {
+    opacity: 0;
+    height: 200px;
+    width: 400px;
+    top: 25%;
+    left: 20%;
+    position: absolute;
+    max-width: 400px;
+  }
+  #wand {
+    opacity: 0;
+    position: absolute;
+    bottom: 45px;
+    left:3vw;
+    width: 6vw;
+    z-index: 0;
+  }
+
+  #card {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    background: #500000;
+    position: absolute;
+    left: 400px,
+    top: 400px,
+  }
+
+  .magicblast {
+    opacity: 0;
+    position: absolute;
+  }
+  #contact_card {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5% 0 0 20%;
+  }
+  #contact_card > div {
+    opacity: 0;
+    width: 70vw;
+    height: 32vh;
+  }
+  #contact_card .sized-profile-image .profile-name {
+    opacity: 0;
+  }
+
+  #contact_card .sized-profile-image .portrait {
+    opacity: 0;
+  }
+
+  #profile-list {
+    margin: 0;
+    padding-bottom: 2px;
+  }
+  .profile-list .activity {
+    text-align: right;
+    margin-right: 1%;
+    font-size: 1.5em;
+    height: 1em;
+  }
+  h3.show-profile {
+    font-size: 3em;
+    margin: 0;
+  }
+  .show-profile p{
+    font-size: 1.3em;
+  }
+  .show-profile p i{
+    font-size: 1.3em;
+  }
+  .profile-content {
+    margin-top: 2%;
+  }
+  .profile-content .profile-name{
+    padding-left: 6%;
+    opacity: 1;
+  }
+  .profile-content .profile-description li{
+    padding-left: 6%;
+    opacity: 1;
+  }
+  .profile-description li i {
+    vertical-align: bottom;
+    padding-right: 2px;
+  }
+  .sized-profile-image {
+    top: -64px;
+    opacity: 1;
+    width: 20vw;
+  }
+  .sized-profile-image .protrait {
+    margin-top: 1vw;
+  }
+  .sized-profile-image .protrait > img {
+    width: 22vw;
+    opacity: 0;
+  }
+  @-webkit-keyframes hatAliveCard {
+    0%   {
+      -webkit-transform: translate(0, -85vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(1vh, -85vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes showHatCard {
+    0%   {
+      -webkit-transform: scale(0.4) translate(0, -10vh) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -85vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideHatCard {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -85vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.4) translate(0, -10vh) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes dropWandCard {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -85vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -85vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes writeWelcomeCard {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes sendMagicCard {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showWandCard {
+    0%   {
+      -webkit-transform: translate(0, -75vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideWandCard {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -75vh) rotate(0);
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes wandAliveCard {
+    0%   {
+      -webkit-transform: translate(0, -40vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -41vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes spinAppearCard {
+    0%   {
+      -webkit-transform: rotate(0) scale(0);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: rotate(-360deg) scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-720deg) scale(1);
+      opacity: 1;
+    }
+  }
+  .send-magic {
+    -webkit-animation: sendMagicCard 0.2s alternate 2 forwards;
+  }
+  .send-magic-icons {
+    -webkit-animation: sendMagicCard 0.4s alternate 8 forwards;
+  }
+  .wand-appear {
+    -webkit-animation: showWandCard 0.9s forwards;
+  }
+  .wand-disappear {
+    -webkit-animation: hideWandCard 0.9s forwards;
+  }
+  .is-alive.wand{
+    -webkit-animation: wandAliveCard 0.5s alternate 4 forwards;
+  }
+  .write-welcome.wand{
+    -webkit-animation: writeWelcomeCard 0.5s alternate 6 forwards;
+  }
+  .is-alive.hat{
+    -webkit-animation: hatAliveCard 0.5s alternate infinite;
+  }
+  .presentate-hat.card-scene {
+    -webkit-animation: showHatCard 1s forwards;
+  }
+  .hide-hat {
+    -webkit-animation: hideHatCard 1s forwards;
+  }
+  .drop-wand {
+    -webkit-animation: dropWandCard 0.2s alternate 2 forwards;
+  }
+  .spin-appear {
+    -webkit-animation: spinAppearCard 0.5s forwards;
+  }
+  .angular {width:61px; height:64px; background-position: -173px -267px}
+  .backbone {width:54px; height:64px; background-position: -356px -341px}
+  .browserify {width:76px; height:64px; background-position: -212px -341px}
+  .facebook {width:20px; height:20px; background-position: -478px -379px}
+  .git {width:40px; height:40px; background-position: -437px -403px}
+  .git-small {width:20px; height:20px; background-position: -222px -473px}
+  .gulp {width:55px; height:122px; background-position: -204px -132px}
+  .less {width:156px; height:64px; background-position: -304px -2px}
+  .linkedin {width:20px; height:20px; background-position: -244px -473px}
+  .node {width:57px; height:64px; background-position: -222px -407px}
+  .sass {width:85px; height:64px; background-position: -236px -275px}
+  .twitter {width:20px; height:20px; background-position: -266px -473px}
+}

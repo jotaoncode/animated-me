@@ -1,0 +1,202 @@
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../assets/logos.png);}
+
+.angular {width:200px; height:56px; background-position: -540px -2px}
+.backbone {width:300px; height:53px; background-position: -2px -2px}
+.browserify {width:169px; height:75px; background-position: -2px -134px}
+.cambridge {width:50px; height:51px; background-position: -773px -170px}
+.css3 {width:45px; height:64px; background-position: -825px -170px}
+.express {width:64px; height:64px; background-position: -877px -2px}
+.facebook {width:40px; height:40px; background-position: -495px -143px}
+.git {width:200px; height:75px; background-position: -2px -57px}
+.grunt {width:54px; height:64px; background-position: -717px -170px}
+.html5 {width:64px; height:64px; background-position: -260px -187px}
+.jota {width:29px; height:40px; background-position: -173px -180px}
+.jquery {width:130px; height:45px; background-position: -261px -140px}
+.js {width:64px; height:64px; background-position: -326px -187px}
+.less {width:150px; height:61px; background-position: -297px -77px}
+.linkedin {width:40px; height:40px; background-position: -872px -170px}
+.marionette {width:73px; height:100px; background-position: -642px -60px}
+.mongo {width:135px; height:40px; background-position: -2px -211px}
+.node {width:234px; height:73px; background-position: -304px -2px}
+.requirejs {width:56px; height:64px; background-position: -659px -162px}
+.sass {width:133px; height:100px; background-position: -742px -2px}
+.trends {width:100px; height:100px; background-position: -540px -60px}
+.twitter {width:40px; height:40px; background-position: -872px -212px}
+.utn {width:34px; height:51px; background-position: -261px -57px}
+.angular-small {width:61px; height:64px; background-position: -537px -162px}
+.angular-smaller {width:20px; height:21px; background-position: -551px -228px}
+.backbone-small {width:54px; height:64px; background-position: -204px -181px}
+.backbone-smaller {width:20px; height:24px; background-position: -800px -223px}
+.browserify-small {width:76px; height:64px; background-position: -875px -104px}
+.browserify-smaller {width:24px; height:20px; background-position: -914px -223px}
+.css3-smaller {width:25px; height:36px; background-position: -139px -211px}
+.express-smaller {width:25px; height:25px; background-position: -451px -216px}
+.facebook-small {width:20px; height:20px; background-position: -573px -228px}
+.git-small {width:40px; height:40px; background-position: -495px -185px}
+.git-smaller {width:20px; height:20px; background-position: -595px -228px}
+.grunt-smaller {width:20px; height:24px; background-position: -914px -197px}
+.gulp-small {width:55px; height:122px; background-position: -204px -57px}
+.gulp-smaller {width:20px; height:44px; background-position: -173px -134px}
+.html5-smaller {width:25px; height:25px; background-position: -773px -223px}
+.jquery-smaller {width:58px; height:20px; background-position: -877px -68px}
+.js-smaller {width:25px; height:25px; background-position: -914px -170px}
+.less-small {width:156px; height:64px; background-position: -717px -104px}
+.less-smaller {width:49px; height:20px; background-position: -478px -227px}
+.linkedin-small {width:20px; height:20px; background-position: -617px -228px}
+.marionette-smaller {width:20px; height:27px; background-position: -717px -60px}
+.mongo-smaller {width:57px; height:17px; background-position: -392px -216px}
+.node-small {width:57px; height:64px; background-position: -600px -162px}
+.node-smaller {width:20px; height:22px; background-position: -529px -228px}
+.sass-small {width:85px; height:64px; background-position: -449px -77px}
+.sass-smaller {width:27px; height:20px; background-position: -166px -222px}
+.space-traveller {width:100px; height:71px; background-position: -393px -143px}
+.space-traveller-smaller {width:28px; height:20px; background-position: -261px -110px}
+.trends-smaller {width:20px; height:20px; background-position: -639px -228px}
+.twitter-small {width:20px; height:20px; background-position: -661px -228px}
+
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+body{
+  height: inherit;
+  width: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+article {
+  height: 100vh;
+}
+
+ul.options-nav {
+  width: 60px;
+}
+
+.page-container {
+  height: inherit;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+.article-0.next-page{
+  top: 85vh;
+}
+
+.article-1.next-page{
+  top: 185vh;
+}
+.article-2.next-page{
+  top: 285vh;
+}
+.article-3.next-page{
+  top: 385vh;
+}
+.article-4.next-page{
+  top: 485vh;
+}
+.article-5.next-page{
+  top: 585vh;
+}
+
+.next-page {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.next-page>a{
+  text-decoration: none;
+  height: 100%;
+  font-size: 3em;
+  vertical-align: middle;
+}
+.next-page>a>i{
+  opacity: 0.5;
+  font-size: 3em;
+  color: blue;
+  vertical-align: middle;
+}
+.back-page {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+}
+.back-page>a{
+  height: 100%;
+  font-size: 3em;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.back-page>a>i{
+  font-size: 3em;
+  opacity: 0.5;
+  color: blue;
+}
+.skip-animation {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  left: 70vw;
+}
+.skip-animation > a {
+  opacity: 0;
+  display: none;
+}
+.skip-animation > a > i {
+  vertical-align: middle;
+}
+.skip-animation > a > span {
+  vertical-align: middle;
+}
+.page-container .row {
+  padding: 0;
+  margin: 0;
+}
+.page-container h2 {
+  padding: 0;
+  margin-top: 0;
+}
+.page-content {
+}
+.section-contianer .section {
+  padding: 0;
+}
+
+.slides > img {
+  width: 6vw;
+}
+.section-container {
+  height: 100vh;
+}

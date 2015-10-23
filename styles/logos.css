@@ -1,0 +1,67 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:406eda1fefda7e17735e225a8039f707:474fefb9c9b2c5b16931259291ba09fe:863f6f4a519be57276bf250dc86c7159$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(logos.png);}
+
+.angular {width:200px; height:56px; background-position: -540px -2px}
+.angular-small {width:61px; height:64px; background-position: -537px -162px}
+.angular-smaller {width:20px; height:21px; background-position: -551px -228px}
+.backbone {width:300px; height:53px; background-position: -2px -2px}
+.backbone-small {width:54px; height:64px; background-position: -204px -181px}
+.backbone-smaller {width:20px; height:24px; background-position: -800px -223px}
+.browserify {width:169px; height:75px; background-position: -2px -134px}
+.browserify-small {width:76px; height:64px; background-position: -875px -104px}
+.browserify-smaller {width:24px; height:20px; background-position: -914px -223px}
+.cambridge {width:50px; height:51px; background-position: -773px -170px}
+.css3 {width:45px; height:64px; background-position: -825px -170px}
+.css3-smaller {width:25px; height:36px; background-position: -139px -211px}
+.express {width:64px; height:64px; background-position: -877px -2px}
+.express-smaller {width:25px; height:25px; background-position: -451px -216px}
+.facebook {width:40px; height:40px; background-position: -495px -143px}
+.facebook-small {width:20px; height:20px; background-position: -573px -228px}
+.git {width:200px; height:75px; background-position: -2px -57px}
+.git-small {width:40px; height:40px; background-position: -495px -185px}
+.git-smaller {width:20px; height:20px; background-position: -595px -228px}
+.grunt {width:54px; height:64px; background-position: -717px -170px}
+.grunt-smaller {width:20px; height:24px; background-position: -914px -197px}
+.gulp-small {width:55px; height:122px; background-position: -204px -57px}
+.gulp-smaller {width:20px; height:44px; background-position: -173px -134px}
+.html5 {width:64px; height:64px; background-position: -260px -187px}
+.html5-smaller {width:25px; height:25px; background-position: -773px -223px}
+.jota {width:29px; height:40px; background-position: -173px -180px}
+.jquery {width:130px; height:45px; background-position: -261px -140px}
+.jquery-smaller {width:58px; height:20px; background-position: -877px -68px}
+.js {width:64px; height:64px; background-position: -326px -187px}
+.js-smaller {width:25px; height:25px; background-position: -914px -170px}
+.less {width:150px; height:61px; background-position: -297px -77px}
+.less-small {width:156px; height:64px; background-position: -717px -104px}
+.less-smaller {width:49px; height:20px; background-position: -478px -227px}
+.linkedin {width:40px; height:40px; background-position: -872px -170px}
+.linkedin-small {width:20px; height:20px; background-position: -617px -228px}
+.marionette {width:73px; height:100px; background-position: -642px -60px}
+.marionette-smaller {width:20px; height:27px; background-position: -717px -60px}
+.mongo {width:135px; height:40px; background-position: -2px -211px}
+.mongo-smaller {width:57px; height:17px; background-position: -392px -216px}
+.node {width:234px; height:73px; background-position: -304px -2px}
+.node-small {width:57px; height:64px; background-position: -600px -162px}
+.node-smaller {width:20px; height:22px; background-position: -529px -228px}
+.requirejs {width:56px; height:64px; background-position: -659px -162px}
+.sass {width:133px; height:100px; background-position: -742px -2px}
+.sass-small {width:85px; height:64px; background-position: -449px -77px}
+.sass-smaller {width:27px; height:20px; background-position: -166px -222px}
+.space-traveller {width:100px; height:71px; background-position: -393px -143px}
+.space-traveller-smaller {width:28px; height:20px; background-position: -261px -110px}
+.trends {width:100px; height:100px; background-position: -540px -60px}
+.trends-smaller {width:20px; height:20px; background-position: -639px -228px}
+.twitter {width:40px; height:40px; background-position: -872px -212px}
+.twitter-small {width:20px; height:20px; background-position: -661px -228px}
+.utn {width:34px; height:51px; background-position: -261px -57px}

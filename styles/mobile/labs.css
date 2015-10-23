@@ -1,0 +1,151 @@
+@media (max-width: 800px) {
+  .sprite.picture-description {
+    float: left;
+    margin-right: 1%;
+  }
+  .labs .lab-content {
+    width: 80%;
+    margin: 1% 0 0 10%;
+    border-bottom: 1px solid #e8eaf6;
+    opacity: 0;
+  }
+  .labs-title {
+    opacity: 0;
+  }
+  .source-lab {
+    text-align: right;
+  }
+  .lab-title {
+    margin: 0;
+  }
+  .lab-description {
+    margin: 1% 0 0 0;
+    font-style: italic;
+  }
+  #hat.hat.labs-scene {
+    bottom: -400vh;
+    left:2vw;
+    width: 8vw;
+    opacity: 0;
+  }
+  #wand.labs-scene {
+    opacity: 0;
+    position: absolute;
+    bottom: -400vh;
+    left:3vw;
+    width: 6vw;
+    z-index: 0;
+  }
+  .magicblast.labs-scene {
+    opacity: 0;
+    position: absolute;
+  }
+
+  @-webkit-keyframes hatAliveLabs {
+    0%   {
+      -webkit-transform: translate(0, -80vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(10px, -80vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes showHatLabs {
+    0%   {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideHatLabs {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.4) translate(0, 0) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes dropWandLabs {
+    0%   {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1) translate(0, -80vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showWandLabs {
+    0%   {
+      -webkit-transform: translate(0, -80vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hideWandLabs {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -80vh) rotate(0);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes sendMagicLabs {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -50vh) rotate(-405deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes wandAliveLabs {
+    0%   {
+      -webkit-transform: translate(0, -50vh) rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0, -51vh) rotate(-360deg);
+      opacity: 1;
+    }
+  }
+  .send-magic.labs-scene {
+    -webkit-animation: sendMagicLabs 0.2s alternate 2 forwards;
+  }
+  .wand-appear.labs-scene {
+    -webkit-animation: showWandLabs 0.9s forwards;
+  }
+  .wand-disappear.labs-scene {
+    -webkit-animation: hideWandLabs 0.9s forwards;
+  }
+  .is-alive.wand.labs-scene{
+    -webkit-animation: wandAliveLabs 0.5s alternate 4 forwards;
+  }
+
+  .is-alive.hat.labs-scene{
+    -webkit-animation: hatAliveLabs 0.5s alternate infinite;
+  }
+  .presentate-hat.labs-scene {
+    -webkit-animation: showHatLabs 1s forwards;
+  }
+  .hide-hat.labs-scene {
+    -webkit-animation: hideHatLabs 1s forwards;
+  }
+  .drop-wand.labs-scene {
+    -webkit-animation: dropWandLabs 0.2s alternate 2 forwards;
+  }
+}
