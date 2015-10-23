@@ -12,6 +12,8 @@ I would like to learn a bit more about animations, take them to mobile, make the
 
 Actually I added a file thats call compresser, in order to just minify some things.
 
+To run the project you will need to execute: $ npm install
+
 ## API
 
 None.
