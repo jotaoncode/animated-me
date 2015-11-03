@@ -1,8 +1,6 @@
 language: javascript
 addons:
   sauce_connect: true
-rvm:
-  - 1.9.3
 env:
   global:
   - secure: c8gKLLfmM0TQCotSTXwVnFZcunyg0ApxXvLgWzgUQIXB4KkZVkPn5D5HnwDOkNHS2tCNcpiRj56mhtvHHot5YJOOvS5Gnp5cPk7SUUXUAgFbyq/44vpEXi9pYMCZa4bkY5ukZgz40wwr0ooiePxf0NAIFk0aiAxkQoTwOwEzHt2k8E6vXTX2pLIok2lYUSL6ZcgyNls/0iLZiQ8unezhfTW6t+E+6kM4P46FMUA5A0rfpK+qtbZ1SjIb3HwCP0qtOfP4m+StA1vb+LYpnW1E0PgRj231hJMrk/9sqIpQN+tbjk4nFg2P8sHLr/s2XpA/bebekhFVB6ZkCBXwAdhy8Q3Z5HvL9/X9Wd+zvNCKrZBsNAT3bixWlEKyJYtwONkujUPbgU3gXsZ+TWH4Hfq0F55Tgz4TJNlgOzWSm9kfInpxpLvi1i84x4f6w/ffIlS7L6HDkjAvD/jPdRA66MSQYyn7Magwd+YouJ3GbX7dr0iDS9LlIyWlYwkmrwQGDVXiD22+tuRudzTRQ8OxEZUPAwe4NiFF1o8zSdTo2eznqWo5j2+dIhAKkp8gzbmHKf1xzQZjtZvHCpvvysuadhdp1WU9aopA5kopfMxeSm3Qz1VNTSOXOJFJGelU0df1P/wtL8NHvMXr80eVJFGF6nIY1kFvkf+/QG/qQc8V3xkJW9g=
@@ -14,7 +12,7 @@ before_install:
 - tar -xjf phantomjs-2.0.0-ubuntu-12.04.tar.bz2
 - sudo rm -rf /usr/local/phantomjs/bin/phantomjs
 - sudo mv phantomjs /usr/local/phantomjs/bin/phantomjs
-install: travis_retry npm install
+install: ant deps travis_retry npm install
 after_success:
 - npm run ci
 - npm run coveralls
