@@ -29,6 +29,10 @@
     "velocity-animate": "^1.2.2"
   },
   "scripts": {
-    "generate-doc": "./node_modules/doxx/bin/doxx -s src/js -T docs"
+    "generate-doc": "./node_modules/doxx/bin/doxx -s src/js -T docs",
+    "test": "rm -rf coverage && karma start karma.local.conf.js",
+    "test-sl": "karma start karma.saucelabs.conf.js",
+    "ci": "npm run test && npm run test-sl",
+    "coveralls": "cat coverage/lcov/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   }
 }
