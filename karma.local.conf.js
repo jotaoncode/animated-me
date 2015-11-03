@@ -1,5 +1,3 @@
-var istanbul = require('browserify-istanbul');
-
 module.exports = function(config) {
   config.set({
     //logLevel: 'LOG_DEBUG',
@@ -8,9 +6,9 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun : true,
+    singleRun : false,
 
-    autoWatch : false,
+    autoWatch : true,
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -21,14 +19,40 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: [
       'mocha',
-      'browserify'
+      'fixture'
     ],
 
-    files: [
-      'src/js/vendors.js',
-      'src/js/commons/**/*.js',
-      'src/js/**/!(start).js',
-      'test/**/**.test.js'
+    files: [{
+        pattern:  './test/**/*.fixture.html'
+      },
+      'node_modules/materialize-css/font/*',
+      './node_modules/timelinejs/build/css/timeline.css',
+      './node_modules/materialize-css/bin/materialize.css',
+      './styles/**/*.css',
+      './node_modules/expect.js/index.js',
+      './vendors.js',
+      './js/actor.js',
+      './js/scenes.js',
+      './js/actors/card.js',
+      './js/actors/welcome.js',
+      './js/actors/explotion.js',
+      './js/actors/wizardHat.js',
+      './js/actors/wand.js',
+      './js/actors/magicBlast.js',
+      './js/scenes/cardEscene.js',
+      './js/actors/timeline.js',
+      './js/actors/educationCard.js',
+      './js/scenes/experience.js',
+      './js/actors/panelSkills.js',
+      './js/actors/projects.js',
+      './js/scenes/skills.js',
+      './js/scenes/education.js',
+      './js/scenes/labs.js',
+      './js/commons.js',
+      './js/enums.js',
+      './js/precalculate.js',
+      './js/index.js',
+      'test/actorSpec/actor.test.js'
     ],
 
     global: {
@@ -42,15 +66,15 @@ module.exports = function(config) {
     exclude: [],
 
     preprocessors: {
-      'src/js/**/*.js': ['browserify', 'coverage'],
-      'test/**/**.test.js': ['browserify']
+      'js/**/*.js': ['coverage'],
+      'test/**/*.fixture.html': ['html2js']
     },
 
     coverageReporter: {
       dir: 'coverage/',
       reporters: [
         { type: 'html'},
-        { type: 'text'},
+        //{ type: 'text'},
         { type: 'lcov', subdir: 'lcov/'}
       ],
       instrumenterOptions: {
@@ -64,14 +88,6 @@ module.exports = function(config) {
       includeAllSources: true
     },
 
-    browserify: {
-      debug: true,
-      extensions: [".js", ".hbs"],
-      transform: [['hbsfy', {"extensions": "hbs"}], 'brfs', istanbul({
-        ignore: ['**/node_modules/**', '**/test/**']
-      })]
-    },
-
     // enable / disable colors in the output (reporters and logs)
     colors: true,
 
@@ -80,5 +96,6 @@ module.exports = function(config) {
     browsers: [
       'PhantomJS2'//, 'Firefox'
     ]
+
   });
 };
