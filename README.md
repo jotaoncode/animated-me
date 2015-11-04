@@ -1,3 +1,7 @@
+[![Build Status](https://api.travis-ci.org/jotaoncode/home.svg)](https://api.travis-ci.org/jotaoncode/home.svg)
+
+[![Coverage Status](https://coveralls.io/repos/jotaoncode/home/badge.svg?branch=master&service=github)](https://coveralls.io/repos/jotaoncode/home?branch=master)
+
 # Home
 
 ## Synopsis
