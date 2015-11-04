@@ -6,9 +6,9 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun : false,
+    singleRun : true,
 
-    autoWatch : true,
+    autoWatch : false,
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
