@@ -19,12 +19,14 @@ var browsers = {
     version: '7.1'
   },
   */
+  /*
   sl_ie_11: {
     base: 'SauceLabs',
     browserName: 'internet explorer',
     platform: 'Windows 8.1',
     version: '11'
   }
+  */
 };
 
 var key,
