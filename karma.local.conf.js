@@ -25,10 +25,11 @@ module.exports = function(config) {
     files: [{
         pattern:  './test/**/*.fixture.html'
       },
-      'node_modules/materialize-css/font/*',
+      './node_modules/materialize-css/font/*',
       './node_modules/timelinejs/build/css/timeline.css',
       './node_modules/materialize-css/bin/materialize.css',
       './styles/**/*.css',
+      './test/styles-test.css',
       './node_modules/expect.js/index.js',
       './vendors.js',
       './js/actor.js',
@@ -52,7 +53,8 @@ module.exports = function(config) {
       './js/enums.js',
       './js/precalculate.js',
       './js/index.js',
-      'test/actorSpec/actor.test.js'
+      'test/actorSpec/actor.test.js',
+      'test/hatSpec/hat.test.js'
     ],
 
     global: {
