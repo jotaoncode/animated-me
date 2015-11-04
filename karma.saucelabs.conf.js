@@ -44,7 +44,7 @@ var key,
 
     // https://docs.saucelabs.com/reference/test-configuration
     sauceLabs: {
-      testName: 'trends-tests',
+      testName: 'home-tests',
       build: 'local ' + Date.now(),
       recordLogs: true,
       recordVideo: false,
