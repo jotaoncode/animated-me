@@ -385,3 +385,11 @@
   .sass {width:85px; height:64px; background-position: -236px -275px}
   .twitter {width:20px; height:20px; background-position: -266px -473px}
 }
+@media (max-width: 800px) and (orientation: landscape) {
+ #contact_card > div {
+    height: 60vh;
+  }
+  .sized-profile-image .protrait > img {
+    width: 16vw;
+  }
+}

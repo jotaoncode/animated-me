@@ -46,8 +46,8 @@ timelineActor.setElements({
   timelineContent: $('.timeline-content')
 });
 educationActor.setElements({
-  utn: $('.education-utn'),
-  cambridge: $('.education-cambridge')
+  utn: $('.section-utn'),
+  cambridge: $('.section-cambridge')
 });
 labsActor.setElements({
   trends: $('.labs-trends'),
@@ -55,30 +55,30 @@ labsActor.setElements({
 });
 animationCardScene.setElements({
   title: $('.education-title'),
-  skip: $('#skip-card-animation'),
+  //skip: $('#skip-card-animation'),
   nextPage: $('.next-page.article-0')
 });
 experienceScene.setElements({
   title: $('.experience-title'),
-  skip: $('#skip-experience-animation'),
+  //skip: $('#skip-experience-animation'),
   nextPage: $('.next-page.article-1'),
   backPage: $('.back-page.article-1')
 });
 skillsScene.setElements({
   title: $('.skills-title'),
-  skip: $('#skip-skills-animation'),
+  //skip: $('#skip-skills-animation'),
   nextPage: $('.next-page.article-2'),
   backPage: $('.back-page.article-2')
 });
 educationScene.setElements({
   title: $('.education-title'),
-  skip: $('#skip-education-animation'),
+  //skip: $('#skip-education-animation'),
   nextPage: $('.next-page.article-3'),
   backPage: $('.back-page.article-3')
 });
 labsScene.setElements({
   title: $('.labs-title'),
-  skip: $('#skip-labs-animation'),
+  //skip: $('#skip-labs-animation'),
   nextPage: $('.next-page.article-4'),
   backPage: $('.back-page.article-4')
 });

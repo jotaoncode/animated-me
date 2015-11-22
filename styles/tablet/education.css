@@ -1,6 +1,7 @@
 @media (max-width: 1400px) {
   .education-title {
     opacity: 0;
+    margin-bottom: 2%;
   }
   .education-content > li{
     opacity: 0;
@@ -41,6 +42,20 @@
   .magicblast.education-scene {
     opacity: 0;
     position: absolute;
+  }
+  .section-cambridge {
+    opacity: 0;
+    padding: 1%;
+    background-color: #64b5f6;
+    margin: 1% auto;
+    width: 80%;
+  }
+  .section-utn {
+    opacity: 0;
+    padding: 1%;
+    margin: 1% auto;
+    width: 80%;
+    background-color: #64b5f6;
   }
 
   @-webkit-keyframes hatAliveEducation {

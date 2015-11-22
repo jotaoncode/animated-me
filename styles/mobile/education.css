@@ -42,6 +42,20 @@
     opacity: 0;
     position: absolute;
   }
+  .section-cambridge {
+    opacity: 0;
+    padding: 1%;
+    background-color: #64b5f6;
+    margin: 1% auto;
+    width: 80%;
+  }
+  .section-utn {
+    opacity: 0;
+    padding: 1%;
+    background-color: #64b5f6;
+    margin: 1% auto;
+    width: 80%;
+  }
 
   @-webkit-keyframes hatAliveEducation {
     0%   {

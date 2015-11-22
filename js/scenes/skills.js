@@ -27,8 +27,8 @@ _.extend(skillsScene, {
     if (alreadyAnimated.indexOf(scenes.skills) >= 0) {
       return;
     }
-    this.els.skip.click(this.endAnimation.bind(this));
-    this.els.skip.show().velocity('fadeIn', {duration: 1000});
+    //this.els.skip.click(this.endAnimation.bind(this));
+    //this.els.skip.show().velocity('fadeIn', {duration: 1000});
 
     isAnimating = true;
     actualScene = scenes.skills;
@@ -46,7 +46,7 @@ _.extend(skillsScene, {
       .then(function() {
         self.els.nextPage.velocity('fadeIn',{duration: 500});
         self.els.backPage.velocity('fadeIn',{duration: 500});
-        self.els.skip.hide();
+        //self.els.skip.hide();
         self.finishedAnimation(scenes.skills);
       }).done();
     }, 1000);

@@ -24,8 +24,8 @@ _.extend(labsScene, {
     if (alreadyAnimated.indexOf(scenes.labs) >= 0) {
       return;
     }
-    this.els.skip.click(this.endAnimation.bind(this));
-    this.els.skip.show().velocity('fadeIn', {duration: 1000});
+    //this.els.skip.click(this.endAnimation.bind(this));
+    //this.els.skip.show().velocity('fadeIn', {duration: 1000});
 
     isAnimating = true;
     actualScene = scenes.labs;
@@ -47,7 +47,7 @@ _.extend(labsScene, {
       .then(function () {
         self.els.nextPage.velocity('fadeIn',{duration: 500});
         self.els.backPage.velocity('fadeIn',{duration: 500});
-        self.els.skip.hide();
+        //self.els.skip.hide();
         self.finishedAnimation(scenes.labs);
       }.bind(self))
       .catch(function () {

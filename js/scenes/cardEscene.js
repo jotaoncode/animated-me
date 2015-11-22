@@ -20,8 +20,8 @@ _.extend(animationCardScene, {
       return;
     }
 
-    this.els.skip.click(this.endAnimation.bind(this));
-    this.els.skip.show().velocity('fadeIn', {duration: 1000});
+    //this.els.skip.click(this.endAnimation.bind(this));
+    //this.els.skip.show().velocity('fadeIn', {duration: 1000});
     isAnimating = true;
     actualScene = scenes.card;
     window.setTimeout(function () {
@@ -56,7 +56,7 @@ _.extend(animationCardScene, {
       .then(wizardHatActor.finish.bind(wizardHatActor), self.endAnimation.bind(self))
       .then(function () {
         self.els.nextPage.velocity('fadeIn',{duration: 500});
-        self.els.skip.hide();
+        //self.els.skip.hide();
         self.finishedAnimation(scenes.card);
       }.bind(self))
       .catch(function () {

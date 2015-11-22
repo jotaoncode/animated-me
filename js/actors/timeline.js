@@ -154,8 +154,7 @@ _.extend(timelineActor, {
     return this.runAnimation(function () {
       self.els.timelineContent.velocity({
         scaleX: 0.1,
-        scaleY: 0.1,
-        backgroundColor: '#ffffff'
+        scaleY: 0.1
       }, {
         duration: 0
       }).velocity({

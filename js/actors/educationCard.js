@@ -27,7 +27,6 @@ _.extend(educationActor, {
       self.els.utn.velocity({
         scaleX: 0,
         scaleY: 0,
-        opacity: 1
       }, {
         duration: 0
       }).velocity({
@@ -35,10 +34,10 @@ _.extend(educationActor, {
         scaleY: 1,
         opacity: 1
       }, {
-        duration: 400,
+        duration: 300,
         easing: 'easeOutCubic'
       })
-    }, 400);
+    }, 300);
   },
   showCambridge: function () {
     var self = this;
@@ -46,7 +45,6 @@ _.extend(educationActor, {
       self.els.cambridge.velocity({
         scaleX: 0,
         scaleY: 0,
-        opacity: 1
       }, {
         duration: 0
       }).velocity({
@@ -54,10 +52,10 @@ _.extend(educationActor, {
         scaleY: 1,
         opacity: 1
       }, {
-        duration: 400,
+        duration: 300,
         easing: 'easeOutCubic'
       })
-    }, 400);
+    }, 300);
   },
   endAnimation: function () {
     this.els.utn.show().css({opacity: 1});

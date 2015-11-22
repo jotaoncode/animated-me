@@ -21,7 +21,6 @@ _.extend(cardActor, {
       self.els.contactCard.velocity({
         scaleX: sizes.width,
         scaleY: sizes.height,
-        opacity: 1
       }, {
         duration: 0
       }).velocity({

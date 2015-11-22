@@ -4,9 +4,12 @@
   }
   #skills .skills-content {
     opacity: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .skills-title {
     opacity: 0;
+    margin-bottom: 2%;
   }
   #hat.hat.skills-scene {
     bottom: -195vh;

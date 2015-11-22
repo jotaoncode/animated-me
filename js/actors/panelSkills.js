@@ -15,7 +15,6 @@ _.extend(panelSkills, {
       self.els.skillsContainer.velocity({
         scaleX: 0.1,
         scaleY: 0.1,
-        opacity: 1
       }, {
         duration: 0
       }).velocity({
@@ -23,10 +22,10 @@ _.extend(panelSkills, {
         scaleY: 1,
         opacity: 1
       }, {
-        duration : 500,
+        duration : 300,
         easing: 'easeOutCubic'
       });
-    }, 500);
+    }, 300);
   },
   endAnimation: function () {
     this.els.skillsContainer.show().css({opacity: 1});

@@ -23,8 +23,7 @@ _.extend(labsActor, {
     return this.runAnimation(function () {
       self.els.trends.velocity({
         scaleX: 0,
-        scaleY: 0,
-        opacity: 1
+        scaleY: 0
       }, {
         duration: 0
       }).velocity({
@@ -32,18 +31,17 @@ _.extend(labsActor, {
         scaleY: 1,
         opacity: 1
       }, {
-        duration: 500,
+        duration: 300,
         easing: 'easeOutCubic'
       })
-    }, 500);
+    }, 300);
   },
   showSpaceTraveller: function () {
     var self = this;
     return this.runAnimation(function () {
       self.els.spaceTraveller.velocity({
         scaleX: 0,
-        scaleY: 0,
-        opacity: 1
+        scaleY: 0
       }, {
         duration: 0
       }).velocity({
@@ -51,10 +49,10 @@ _.extend(labsActor, {
         scaleY: 1,
         opacity: 1
       }, {
-        duration: 500,
+        duration: 300,
         easing: 'easeOutCubic'
       })
-    }, 500);
+    }, 300);
   },
   endAnimation: function () {
     this.els.spaceTraveller.show().css({ opacity: 1});
